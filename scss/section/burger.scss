@@ -1,0 +1,112 @@
+.burger {
+    background-image: url(../img/bg/burger_bg.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+    margin-right: 16px;
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        @include circle(5px, #fff);
+        margin: 0 15px;
+    }
+    &:last-child:after {
+        display: none;
+    }
+}
+
+.nav__link {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    font-size: rem(13px);
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .5s;
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.burger__container {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.burger__pic,
+.burger__desc {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.burger__desc {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title {
+    color: #f9b43b;
+    font-family: 'Gagalin', cursive;
+    font-size: rem(72px);
+    line-height: 1.42;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.burger__text {
+    font-family: 'Lifehack', Arial, Helvetica, sans-serif;
+    font-size: rem(65px);
+    line-height: 0.9;
+    margin-top: 20px;
+}
+
+.arrow__scroll {
+    position: absolute;
+    bottom: 10%;
+    &:hover {
+        fill: $yellow;
+    }
+}
+
+.arrow__link {
+    display: block;
+}
