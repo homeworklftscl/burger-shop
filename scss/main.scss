@@ -1,12 +1,10 @@
 //config
 @import "./config/variables.scss";
 @import "./config/mixins.scss";
-
 // layout
 @import "./layout/fonts.scss";
 @import "./layout/base.scss";
 @import "./layout/adjustment.scss";
-
 // section
 @import "./section/burger.scss";
 @import "./section/best.scss";
@@ -14,3 +12,4 @@
 @import "./section/team.scss";
 @import "./section/slider-menu.scss";
 @import "./section/contacts.scss";
+@import "./section/reviews.scss";

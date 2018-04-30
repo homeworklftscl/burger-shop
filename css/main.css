@@ -75,9 +75,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -109,6 +106,33 @@ ul {
   display: inline-block; }
   .order-link:hover {
     background-color: #cb411b; }
+
+.nav-dottbar {
+  position: fixed;
+  top: 15%;
+  right: 4%; }
+
+.dottbar__item {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 0.625rem; }
+  .dottbar__item:last-child {
+    margin-bottom: 0; }
+
+.dottbar__item_active {
+  border-radius: 50%;
+  border: 1px solid; }
+
+.dottbar__link {
+  display: block;
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff; }
 
 .burger {
   background-image: url(../img/bg/burger_bg.png);
@@ -181,16 +205,12 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
 
 .burger__content {
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +218,8 @@ ul {
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 4.6875rem; }
 
 .burger__pic,
 .burger__desc {
@@ -233,9 +254,7 @@ ul {
 
 .arrow__scroll {
   position: absolute;
-  bottom: 10%; }
-  .arrow__scroll:hover {
-    fill: #f8b43a; }
+  bottom: 5%; }
 
 .arrow__link {
   display: block; }
@@ -247,29 +266,14 @@ ul {
   background-size: cover;
   position: relative; }
 
+.best__content {
+  margin-top: 9.9375rem; }
+
 .section__title_best {
   padding: 0;
   color: #2f3234;
   margin-bottom: 55px;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-
-.best__container {
-  height: 650px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  text-align: center; }
 
 .best__list {
   display: -webkit-box;
@@ -277,7 +281,7 @@ ul {
   display: flex; }
 
 .best__item {
-  width: 300px;
+  width: 18.75rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -302,4 +306,67 @@ ul {
 .best__text {
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
-  font-weight: 300; }
+  font-weight: 300;
+  opacity: 0.6; }
+
+.reviews__list {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__item {
+  width: 25%;
+  height: 50%;
+  position: relative; }
+
+.reviews__photo {
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100%; }
+
+.reviews__content {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 1.25rem 3.125rem;
+  opacity: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .reviews__content:hover {
+    opacity: 1;
+    background-color: rgba(22, 22, 22, 0.7); }
+
+.reviews__title {
+  font-family: "Gagalin", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1.5625rem; }
+
+.reviews__desc, .button {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  margin-bottom: 1.0625rem; }
+
+.button {
+  font-weight: 500;
+  color: #fff;
+  outline: none;
+  border: none;
+  background-color: #2f3234;
+  border-radius: 0.1875rem;
+  padding: 0.6875rem 0.9375rem;
+  text-transform: uppercase;
+  cursor: pointer; }

@@ -6,20 +6,15 @@
     position: relative;
 }
 
+.best__content {
+    margin-top: 9.9375rem;
+}
+
 .section__title_best {
     padding: 0;
     color: $dark;
     margin-bottom: 55px;
-    justify-content: flex-start;
-
-}
-
-.best__container {
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .best__list {
@@ -27,7 +22,7 @@
 }
 
 .best__item {
-    width: 300px;
+    width: rem(300px);
     justify-content: center;
     align-items: center;
 }
@@ -53,4 +48,5 @@
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
     font-size: rem(14px);
     font-weight: 300;
+    opacity: 0.6;
 }

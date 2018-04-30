@@ -60,16 +60,15 @@
     height: 650px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .burger__content {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: rem(75px);
 }
 
 .burger__pic,
@@ -101,10 +100,7 @@
 
 .arrow__scroll {
     position: absolute;
-    bottom: 10%;
-    &:hover {
-        fill: $yellow;
-    }
+    bottom: 5%;
 }
 
 .arrow__link {
