@@ -135,7 +135,7 @@ ul {
   background-color: #fff; }
 
 .burger {
-  background-image: url(img/bg/burger_bg.png);
+  background-image: url(../img/bg/burger_bg.png);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -260,7 +260,7 @@ ul {
   display: block; }
 
 .best {
-  background-image: url(img/bg/best-bg.png);
+  background-image: url(../img/bg/best-bg.png);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
