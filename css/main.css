@@ -135,7 +135,7 @@ ul {
   background-color: #fff; }
 
 .burger {
-  background-image: url(./img/bg/burger_bg.png);
+  background-image: url(/img/bg/burger_bg.png);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -260,7 +260,7 @@ ul {
   display: block; }
 
 .best {
-  background-image: url(./img/bg/best-bg.png);
+  background-image: url(/img/bg/best-bg.png);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -339,7 +339,7 @@ ul {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 2.5rem 1.25rem 3.125rem;
+  padding: 2.5rem 4.375rem 3.125rem 1.25rem;
   opacity: 0;
   -webkit-transition: .5s;
   -o-transition: .5s;
@@ -354,7 +354,8 @@ ul {
   font-weight: 400;
   margin-bottom: 1.5625rem; }
 
-.reviews__desc, .button {
+.reviews__desc,
+.button {
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
   font-size: 0.8125rem;
   font-weight: 300;

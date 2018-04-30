@@ -27,7 +27,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    padding: rem(40px) rem(20px) rem(50px);
+    padding: rem(40px) rem(70px) rem(50px) rem(20px);
     opacity: 0;
     transition: .5s;
     &:hover {
@@ -43,7 +43,8 @@
     margin-bottom: rem(25px);
 }
 
-.reviews__desc, .button {
+.reviews__desc,
+.button {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
     font-size: rem(13px);
     font-weight: 300;
