@@ -6,8 +6,8 @@
     position: relative;
 }
 
-.best__content {
-    margin-top: 9.9375rem;
+.best__conteiner {
+    justify-content: center;
 }
 
 .section__title_best {
@@ -18,13 +18,17 @@
 }
 
 .best__list {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.best__content {
+    width: 100%;
 }
 
 .best__item {
-    width: rem(300px);
-    justify-content: center;
-    align-items: center;
+    width: rem(250px);
 }
 
 .best__pic {
