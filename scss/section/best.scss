@@ -13,7 +13,7 @@
 .section__title_best {
     padding: 0;
     color: $dark;
-    margin-bottom: 55px;
+    margin-bottom: rem(55px);
     text-align: center;
 }
 
@@ -33,7 +33,7 @@
 
 .best__pic {
     text-align: center;
-    margin-bottom: 33px;
+    margin-bottom: rem(33px);
 }
 
 .best__desc {
@@ -45,7 +45,7 @@
     font-family: "Lifehack", Arial, Helvetica, sans-serif;
     font-size: rem(24px);
     line-height: rem(28px);
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .best__text {
