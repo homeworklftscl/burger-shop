@@ -9,7 +9,7 @@
 }
 
 .conteiner {
-    width: 940px;
+    width: 940px + 20px;
     height: 100%;
     margin: 0 auto;
     display: flex; 
@@ -28,8 +28,9 @@
 
 .section__title {
     color: #f9b43b;
-    font-family: 'Gagalin', cursive;
+    font-family: 'Gagalin';
     font-size: rem(72px);
+    font-weight: normal;
     line-height: 1.42;
     margin: 0;
 }
@@ -42,7 +43,7 @@
     border-radius: 5px;
     font-size: rem(13px);
     font-weight: 500;
-    line-height: 1.42;
+    line-height: 1.42em;
     text-transform: uppercase;
     transition: .5s;
     border: none;

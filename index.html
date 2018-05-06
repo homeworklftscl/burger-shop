@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/main.css">
     <title>Mr.Burger</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="maincontent">
             <section class="section burger">
-               <div class="conteiner burger__conteiner">
+                <div class="conteiner burger__conteiner">
                     <header class="header">
                         <div class="header__logo">
                             <a href="" class="logo">
@@ -43,7 +45,7 @@
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <button class="button button_header">заказать</button>
+                            <button class="button button__all">заказать</button>
                         </div>
                     </header>
                     <div class="burger__content">
@@ -56,13 +58,13 @@
                         </div>
                     </div>
                     <div class="arrow">
-                        <a href="" class="arrow__link">
+                        <a href="#s-best" class="arrow__link">
                             <img src="./img/content/arrow-scroll.svg" alt="" class="arrow__img">
                         </a>
                     </div>
-               </div>
+                </div>
             </section>
-            <section class="section best">
+            <section id="s-best" class="section best">
                 <div class="conteiner best__conteiner">
                     <div class="best__content">
                         <h2 class="section__title section__title_best">мы лучшие</h2>
@@ -73,7 +75,9 @@
                                 </div>
                                 <div class="best__desc">
                                     <div class="best__name">100% cвежее мясо</div>
-                                    <div class="best__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                                    <div class="best__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
+                                        неравномерен.
+                                    </div>
                                 </div>
                             </li>
                             <li class="best__item">
@@ -82,8 +86,9 @@
                                 </div>
                                 <div class="best__desc">
                                     <div class="best__name">Ручная сборка</div>
-                                    <div class="best__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский
-                                    пафос.</div>
+                                    <div class="best__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое
+                                        полустишие притягивает сюжетный реформаторский пафос.
+                                    </div>
                                 </div>
                             </li>
                             <li class="best__item">
@@ -98,62 +103,65 @@
                         </ul>
                     </div>
                 </div>
-            
+
+            </section>
+            <section class="section slider">
             </section>
             <section class="section team">
                 <div class="team__wrapper">
                     <div class="team__content">
                         <h2 class="section__title section__title_team">команда</h2>
-                        <div class="accordeon">
+                        <div class="accordeon-team">
                             <ul class="accordeon__list">
                                 <li class="accordeon__item">
-                                    <div class="teammate">
-                                        <div class="teammate__name ">дэниэл редклиф</div>
-                                        <div class="teammate__info ">
-                                            <div class="teammate__icon" style="background-image: url(img/content/icon.jpg)">
+                                    <a href="" class="teammate__name ">дэниэл редклиф</a>
+                                    <div class="teammate__info ">
+                                        <div class="teammate__icon" style="background-image: url(img/content/icon.jpg)">
+                                        </div>
+                                        <div class="teammate__desc">
+                                            <div class="teammate__pro">Оператор</div>
+                                            <div class="teammate__text">
+                                                <p>С радостью поможем подобрать идеальный бургер и оформить заказ.</p>
                                             </div>
-                                            <div class="teammate__desc">
-                                                <div class="teammate__prof">Оператор</div>
-                                                <div class="teammate__text">С радостью поможем подобрать идеальный бургер и оформить заказ.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordeon__item accordeon__item_active">
+                                    <a href="" class="teammate__name">сашка лукашенко</a>
+                                    <div class="teammate__info">
+                                        <div class="teammate__icon" style="background-image: url(img/content/alex.jpg)">
+                                        </div>
+                                        <div class="teammate__desc">
+                                            <div class="teammate__prof">Диктатор</div>
+                                            <div class="teammate__text">
+                                                <p>Только взялся за яйца, как сразу молоко пропало.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="accordeon__item">
+                                    <a href="" class="teammate__name ">дэниэл редклиф</a>
+                                    <div class="teammate__info ">
+                                        <div class="teammate__icon" style="background-image: url(img/content/icon.jpg)">
+                                        </div>
+                                        <div class="teammate__desc">
+                                            <div class="teammate__prof">Оператор</div>
+                                            <div class="teammate__text">
+                                                <p>С радостью поможем подобрать идеальный бургер и оформить заказ.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="accordeon__item">
-                                    <div class="teammate">
-                                        <div class="teammate__name teammate__name_active">сашка лукашенко</div>
-                                        <div class="teammate__info teammate__info_active">
-                                            <div class="teammate__icon" style="background-image: url(img/content/alex.jpg)">
-                                            </div>
-                                            <div class="teammate__desc">
-                                                <div class="teammate__prof">Диктатор</div>
-                                                <div class="teammate__text">Только взялся за яйца, как сразу молоко пропало.</div>
-                                            </div>
+                                    <a href="" class="teammate__name ">дэниэл редклиф</a>
+                                    <div class="teammate__info ">
+                                        <div class="teammate__icon" style="background-image: url(img/content/icon.jpg)">
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="accordeon__item">
-                                    <div class="teammate">
-                                        <div class="teammate__name">дэниэл редклиф</div>
-                                        <div class="teammate__info">
-                                            <div class="teammate__icon" style="background-image: url(img/content/icon.jpg)">
-                                            </div>
-                                            <div class="teammate__desc">
-                                                <div class="teammate__prof">Оператор</div>
-                                                <div class="teammate__text">С радостью поможем подобрать идеальный бургер и оформить заказ.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="accordeon__item">
-                                    <div class="teammate">
-                                        <div class="teammate__name">дэниэл редклиф</div>
-                                        <div class="teammate__info">
-                                            <div class="teammate__icon" style="background-image: url(img/content/icon.jpg)">
-                                            </div>
-                                            <div class="teammate__desc">
-                                                <div class="teammate__prof">Оператор</div>
-                                                <div class="teammate__text">С радостью поможем подобрать идеальный бургер и оформить заказ.</div>
+                                        <div class="teammate__desc">
+                                            <div class="teammate__prof">Оператор</div>
+                                            <div class="teammate__text">
+                                                <p>С радостью поможем подобрать идеальный бургер и оформить заказ.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -161,7 +169,40 @@
                             </ul>
                         </div>
                     </div>
-                   
+
+                </div>
+            </section>
+            <section class="section menu">
+                <h2 class="section__title section__title_menu">меню</h2>
+                <div class="accordeon-menu">
+                    <ul class="menu__list">
+                        <li class="menu__item  menu__item_meat">
+                            <a class="menu__triger" href="">
+                                <div class="menu__name">для мясоедов</div>
+                            </a>
+                            <div class="menu__info">
+                                <p class="menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat recusandae nobis
+                                    quae deserunt at consequuntur deleniti unde! Quos expedita perspiciatis ipsum! Mollitia
+                                    commodi ipsum corporis vitae numquam at necessitatibus.</p>
+                            </div>
+                        </li>
+                        <li class="menu__item  menu__item_vegan">
+                            <a class="menu__triger" href="">
+                                <div class="menu__name">для мясоедов</div>
+                            </a>
+                            <div class="menu__info">
+                                <p class="menu__text"></p>
+                            </div>
+                        </li>
+                        <li class="menu__item  menu__item_diet">
+                            <a class="menu__triger" href="">
+                                <div class="menu__name">для мясоедов</div>
+                            </a>
+                            <div class="menu__info">
+                                <p class="menu__text"></p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="section reviews">
@@ -170,19 +211,19 @@
                         <div class="reviews__photo" style="background-image: url(img/reviews/1.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-                            мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
                         </div>
                     </li>
                     <li class="reviews__item">
-                        <div class="reviews__photo"  style="background-image: url(img/reviews/2.jpg)"></div>
+                        <div class="reviews__photo" style="background-image: url(img/reviews/2.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-                                быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
@@ -192,19 +233,19 @@
                         <div class="reviews__photo" style="background-image: url(img/reviews/3.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-                                быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
                         </div>
                     </li>
                     <li class="reviews__item">
-                        <div class="reviews__photo"  style="background-image: url(img/reviews/4.jpg)"></div>
+                        <div class="reviews__photo" style="background-image: url(img/reviews/4.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-                                быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
@@ -214,8 +255,8 @@
                         <div class="reviews__photo" style="background-image: url(img/reviews/5.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-                                быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
@@ -225,8 +266,8 @@
                         <div class="reviews__photo" style="background-image: url(img/reviews/6.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-                                быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
@@ -236,8 +277,8 @@
                         <div class="reviews__photo" style="background-image: url(img/reviews/7.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-                                быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
@@ -247,14 +288,134 @@
                         <div class="reviews__photo" style="background-image: url(img/reviews/8.jpg)"></div>
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
-                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
-                                быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button_reviews">Подробнее</button>
                             </div>
                         </div>
                     </li>
                 </ul>
+            </section>
+            <section class="section order">
+                <div class="conteiner order__conteiner">
+                    <h2 class="section__title section__title_order">закажите доставку</h2>
+                    <form class="form" action="">
+                        <div class="form-left">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Имя</div>
+                                    <input class="form__input" type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Телефон</div>
+                                    <input class="form__input" type="text">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Улица</div>
+                                    <input class="form__input" type="text">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Дом</div>
+                                    <input class="form__input" type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Корпус</div>
+                                    <input class="form__input" type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Квартира</div>
+                                    <input class="form__input" type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Этаж</div>
+                                    <input class="form__input" type="text">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <label class="form__textarea">
+                                <div class="form__title">Коментарий</div>
+                                <textarea class="textarea" name="comment"></textarea>
+                            </label>
+                            <div class="pay">
+                                <label class="form__change">
+                                    <input class="form__radio" type="radio" name="pay">
+                                    <span class="form__radio_style"></span>
+                                    <div class="form__title">Потребуется сдача</div>
+                                </label>
+                                <label class="form__card">
+                                    <input class="form__radio" type="radio" name="pay">
+                                    <span class="form__radio_style"></span>
+                                    <div class="form__title">Оплата по карте</div>
+                                </label>
+                            </div>
+                            <div class="recall">
+                                <label class="form__recall">
+                                    <input class="form__checkbox" type="checkbox">
+                                    <span class="form__checkbox_style"></span>
+                                    <div class="form__title">Не перезванивать</div>
+                                </label>
+                            </div>
+                            <div class="order-btn">
+                                <button class="button button__all button__all_order">заказать</button>
+                                <button class="button button__all button__all_clean">очистить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section contacts">
+                <footer class="footer">
+                    <div class="conteiner block-conteiner">
+                        <div class="block">
+                            <div class="block__contact">
+                                <div class="adrress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                                <a href="tel: +78123771377" class="tel">
+                                    <svg class="tel__icon" width="12px" height="12px">
+                                        <use xlink:href="../img/icon/sprite.svg#phone"></use>
+                                    </svg>
+                                    +7 (812) 377-13-77</a>
+                            </div>
+                            <div class="block__social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="29px" height="20px">
+                                                <use xlink:href="../img/icon/sprite.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20px" height="20px">
+                                                <use xlink:href="../img/icon/sprite.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="20px" height="20px">
+                                                <use xlink:href="../img/icon/sprite.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <svg class="social__icon" width="29px" height="20px">
+                                                <use xlink:href="../img/icon/sprite.svg#twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </section>
         </div>
     </div>
@@ -303,4 +464,5 @@
         </ul>
     </div>
 </body>
+
 </html>

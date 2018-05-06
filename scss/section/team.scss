@@ -1,5 +1,5 @@
 .team {
-    background-image: url(../img/bg/bg.png);
+    background-image: url(../img/bg/tm-bg.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -27,13 +27,22 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: rem(35px);
+    margin-bottom: rem(25px);
     height: 0;
     overflow: hidden;
 }
 
-.teammate__info_active {
-    height: rem(110px);
+.accordeon__item_active {
+    .teammate__info {
+        height: rem(110px);
+    }
+    .teammate__name {
+        color: $yellow;
+        &:before {
+            align-self: flex-start;
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .teammate__name {
@@ -41,29 +50,15 @@
     font-size: rem(14px);
     font-weight: normal;
     color: $white;
-    margin-bottom: rem(17px);
+    margin-bottom: rem(20px);
     display: flex;
+    text-decoration: none;
     &:before {
+        display: flex;
         align-self: flex-end;
         content: '';
-        display: inline-block;
         border-top: 5px solid $yellow;
         border-bottom: 5px solid transparent;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        margin-right: 10px;
-    }
-}
-
-.teammate__name_active {
-    color: $yellow;
-    &:before {
-        align-self: center;
-        content: '';
-        display: inline-block;
-        vertical-align: middle;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         margin-right: 10px;
@@ -76,16 +71,14 @@
     border-radius: 50%;
     background-position: 50%;
     background-size: cover;
-    padding-left: rem(10px);
+    margin: 0 rem(15px);
 }
 
-.teammate__desc,
-.teammate__text {
+.teammate__desc {
     width: 80%;
     font-family: "Ubuntu";
     color: $white;
     font-size: rem(14px);
-    line-height: rem(24px);
 }
 
 .teammate__prof {

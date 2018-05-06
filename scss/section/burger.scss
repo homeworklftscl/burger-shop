@@ -17,7 +17,7 @@
     margin-right: auto;
 }
 
-.button_header {
+.button__all {
     background-color: $orange;
     &:hover {
         background-color: darken($orange, 7%);
@@ -30,7 +30,7 @@
 
 .nav__list {
     display: flex;
-    margin-right: 16px;
+    margin-right: rem(16px);
 }
 
 .nav__item {
@@ -52,7 +52,7 @@
 .nav__link {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
     font-style: normal;
-    color: #ffffff;
+    color: $white;
     font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
