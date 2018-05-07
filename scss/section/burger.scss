@@ -90,6 +90,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .burger__pic,
@@ -98,16 +102,34 @@
     display: flex;
 }
 
+.burger__pic {
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+}
+
 .burger__desc {
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding-top: rem(40px);
+    @include tablets {
+        padding-top: 0;
+        align-items: center;
+    }
 }
 
 .burger__text {
+    display: flex;
     font-family: 'Lifehack', Arial, Helvetica, sans-serif;
     font-size: rem(65px);
     line-height: 0.9;
     margin-top: 20px;
+    @include tablets {
+        width: 95%;
+        margin-top: 0;
+        text-align: center;
+    }
 }
 
 .arrow__link {

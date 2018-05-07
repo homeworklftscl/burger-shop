@@ -15,30 +15,71 @@
     color: $dark;
     margin-bottom: rem(55px);
     text-align: center;
+    @include phones {
+        margin-bottom: rem(38px);
+        font-size: 50px;
+    }
 }
 
 .best__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .best__content {
     width: 100%;
+    @include phones {
+        width: 93%;
+    }
 }
 
 .best__item {
     width: rem(250px);
+    @include phones {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: rem(50px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .best__pic {
     text-align: center;
     margin-bottom: rem(33px);
+    @include phones {
+        margin: 0 rem(28px) 0 0;
+    }
+}
+
+.best__svg_meat {
+    fill: $orange;
+}
+
+.best__svg_hand {
+    fill: $yellow;
+}
+
+.best__svg_natural {
+    fill: $green;
 }
 
 .best__desc {
     color: $dark;
     text-align: center;
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .best__name {
@@ -46,6 +87,11 @@
     font-size: rem(24px);
     line-height: rem(28px);
     margin-bottom: rem(25px);
+    @include phones {
+        width: 100%;
+        text-align: left;
+        margin-bottom: rem(15px);
+    }
 }
 
 .best__text {
@@ -53,4 +99,7 @@
     font-size: rem(14px);
     font-weight: 300;
     opacity: 0.6;
+    @include phones {
+        text-align: left;
+    }
 }

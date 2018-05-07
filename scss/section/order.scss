@@ -18,11 +18,22 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
 }
 
 .form-left,
 .form-right {
     width: 48.5%;
+    @include tablets {
+        width: 80%;
+    }
+    @include phones {
+        width: 100%;
+    }
 }
 
 .form__row {
@@ -69,10 +80,22 @@
     margin-bottom: rem(15px);
 }
 
+.pay,
+.recall,
+.order-btn {
+    @include phones {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .form__change,
 .form__card {
     display: flex;
-    flex: 1;
+}
+
+.form__change {
+    margin-right: rem(20px);
 }
 
 .form__radio,
@@ -113,6 +136,7 @@
 }
 
 .recall {
+    display: flex;
     margin-bottom: rem(15px);
 }
 
@@ -160,5 +184,17 @@
     background-color: transparent;
     &:hover {
         background-color: black;
+    }
+}
+
+.order-btn {
+    display: flex;
+}
+
+.textarea,
+.pay,
+.recall {
+    @include phones {
+        margin-bottom: rem(30px);
     }
 }

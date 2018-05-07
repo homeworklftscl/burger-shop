@@ -53,7 +53,7 @@
                             <img class="burger__img" src="./img/content/big-burger.png" alt="big burger">
                         </div>
                         <div class="burger__desc">
-                            <h2 class="section__title">Мы делаем</h2>
+                            <h2 class="section__title section__title_burger">Мы делаем</h2>
                             <div class="burger__text">натуральные бургеры</div>
                         </div>
                     </div>
@@ -71,7 +71,9 @@
                         <ul class="best__list">
                             <li class="best__item">
                                 <div class="best__pic">
-                                    <img src="img/icon/meat.svg" alt="meat" class="best__img">
+                                    <svg class="best__svg_meat" width="90px" height="100px">
+                                        <use xlink:href="img/icon/sprite.svg#meat"></use>
+                                    </svg>
                                 </div>
                                 <div class="best__desc">
                                     <div class="best__name">100% cвежее мясо</div>
@@ -82,7 +84,9 @@
                             </li>
                             <li class="best__item">
                                 <div class="best__pic">
-                                    <img src="img/icon/hand.svg" alt="hand" class="best__img">
+                                    <svg class="best__svg_hand" width="90px" height="100px">
+                                        <use xlink:href="img/icon/sprite.svg#hand"></use>
+                                    </svg>
                                 </div>
                                 <div class="best__desc">
                                     <div class="best__name">Ручная сборка</div>
@@ -93,7 +97,9 @@
                             </li>
                             <li class="best__item">
                                 <div class="best__pic">
-                                    <img src="img/icon/natural.svg" alt="natural" class="best__img">
+                                    <svg class="best__svg_natural" width="90px" height="100px">
+                                        <use xlink:href="img/icon/sprite.svg#natural"></use>
+                                    </svg>
                                 </div>
                                 <div class="best__desc">
                                     <div class="best__name">Натуральные ингредиенты</div>
@@ -119,7 +125,7 @@
                                         <div class="teammate__icon" style="background-image: url(img/content/icon.jpg)">
                                         </div>
                                         <div class="teammate__desc">
-                                            <div class="teammate__pro">Оператор</div>
+                                            <div class="teammate__prof">Оператор</div>
                                             <div class="teammate__text">
                                                 <p>С радостью поможем подобрать идеальный бургер и оформить заказ.</p>
                                             </div>
@@ -176,30 +182,44 @@
                 <h2 class="section__title section__title_menu">меню</h2>
                 <div class="accordeon-menu">
                     <ul class="menu__list">
-                        <li class="menu__item  menu__item_meat">
-                            <a class="menu__triger" href="">
-                                <div class="menu__name">для мясоедов</div>
+                        <li class="menu__item menu__item_active">
+                            <a class="menu__trigger" href="" style="background-image: url(img/content/for-meat.png">
+                                <div class="menu__title">для мясоедов</div>
                             </a>
-                            <div class="menu__info">
-                                <p class="menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat recusandae nobis
-                                    quae deserunt at consequuntur deleniti unde! Quos expedita perspiciatis ipsum! Mollitia
-                                    commodi ipsum corporis vitae numquam at necessitatibus.</p>
+                            <div class="menu__content">
+                                <p class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+                                    конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
+                                    Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+                                    Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает
+                                    метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                    редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
+                                    анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
                             </div>
                         </li>
-                        <li class="menu__item  menu__item_vegan">
-                            <a class="menu__triger" href="">
-                                <div class="menu__name">для мясоедов</div>
+                        <li class="menu__item">
+                            <a class="menu__trigger" href="#" style="background-image: url(img/content/for-vegan.png">
+                                <div class="menu__title">вегетарианское</div>
                             </a>
-                            <div class="menu__info">
-                                <p class="menu__text"></p>
+                            <div class="menu__content">
+                                <p class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм
+                                    сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
+                                    к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин,
+                                    пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                    редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник
+                                    стал особенно чутко относиться к слову.</p>
                             </div>
                         </li>
-                        <li class="menu__item  menu__item_diet">
-                            <a class="menu__triger" href="">
-                                <div class="menu__name">для мясоедов</div>
+                        <li class="menu__item">
+                            <a class="menu__trigger" href="" style="background-image: url(img/content/for-diet.png">
+                                <div class="menu__title">диетическое</div>
                             </a>
-                            <div class="menu__info">
-                                <p class="menu__text"></p>
+                            <div class="menu__content">
+                                <p class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм
+                                    сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться
+                                    к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин,
+                                    пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                    редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник
+                                    стал особенно чутко относиться к слову.</p>
                             </div>
                         </li>
                     </ul>
@@ -212,11 +232,10 @@
                         <div class="reviews__content">
                             <div class="reviews__title">Константин Спилберг</div>
                             <div class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
-                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-                                мягкими, котлетка такой сочной, а сыр таким расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-                                мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -228,6 +247,7 @@
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -239,6 +259,7 @@
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -250,6 +271,7 @@
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -261,6 +283,7 @@
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -272,6 +295,7 @@
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -283,6 +307,7 @@
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -294,6 +319,7 @@
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
                             <div class="reviews__btn">
                                 <button class="button button__reviews">Подробнее</button>
+                                <button class="button button__reviews button__reviews_adaptive">Читать отзыв</button>
                             </div>
                         </div>
                     </li>
@@ -307,11 +333,11 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input class="form__input" type="text">
+                                    <input class="form__input" type="text" placeholder="Имя">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input class="form__input" type="text">
+                                    <input class="form__input" type="text" placeholder="+3754457926**">
                                 </label>
                             </div>
                             <div class="form__row">

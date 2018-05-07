@@ -9,6 +9,10 @@
     width: 25%;
     height: 50%;
     position: relative;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .reviews__photo {
@@ -34,6 +38,14 @@
         opacity: 1;
         background-color: rgba(22, 22, 22, 0.7);
     }
+    @include tablets {
+        text-align: center;
+        padding: rem(25px) rem(50px);
+    }
+    @include phones {
+        text-align: center;
+        padding: rem(50px) rem(50px);
+    }
 }
 
 .reviews__title {
@@ -41,6 +53,9 @@
     font-size: rem(14px);
     font-weight: 400;
     margin-bottom: rem(25px);
+    @include phones {
+        font-size: rem(20px);
+    }
 }
 
 .reviews__desc {
@@ -48,11 +63,24 @@
     font-size: rem(13px);
     font-weight: 300;
     margin-bottom: rem(17px);
+    @include phones {
+        display: none;
+    }
 }
 
 .button__reviews {
     background-color: $dark;
     &:hover {
         background-color: black;
+    }
+    @include phones {
+        display: none;
+    }
+}
+
+.button__reviews_adaptive {
+    display: none;
+    @include phones {
+        display: flex;
     }
 }
