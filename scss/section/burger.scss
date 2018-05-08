@@ -32,6 +32,10 @@
     display: block;
 }
 
+.burger__img {
+    max-width: 100%;
+}
+
 .nav {
     @include tablets {
         display: none;
@@ -94,12 +98,19 @@
     @include tablets {
         flex-direction: column;
     }
+    @include phones {
+        flex-direction: row;
+    }
 }
 
 .burger__pic,
 .burger__desc {
     flex-basis: 50%;
     display: flex;
+    @include phones {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
 
 .burger__pic {
@@ -129,6 +140,19 @@
         width: 95%;
         margin-top: 0;
         text-align: center;
+    }
+    @include phones {
+        font-size: rem(58px);
+    }
+    @include mobiles {
+        font-size: rem(46px);
+    }
+}
+
+.section__title_burger {
+    @include mobiles {
+        white-space: nowrap;
+        font-size: rem(55px);
     }
 }
 

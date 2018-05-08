@@ -25,6 +25,9 @@
                 @include phones {
                     width: rem(270px);
                 }
+                @include mobiles {
+                    width: rem(206px);
+                }
             }
         }
     }
@@ -39,6 +42,9 @@
         @include phones {
             width: rem(65px);
         }
+        @include mobiles {
+            width: rem(38px)
+        }
     }
     &__title {
         font-family: 'Gagalin', Arial, Helvetica, sans-serif;
@@ -47,6 +53,9 @@
         transform: rotate(-90deg);
         white-space: nowrap;
         width: 100%;
+        @include mobiles {
+            font-size: rem(27px);
+        }
     }
     &__content {
         width: 0;
@@ -64,6 +73,11 @@
         @include phones {
             min-width: rem(275px);
             padding: rem(60px) rem(20px);
+        }
+        @include mobiles {
+            min-width: rem(220px);
+            font-size: rem(12px);
+            padding: rem(35px) rem(20px);
         }
     }
 }

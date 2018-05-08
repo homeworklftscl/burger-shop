@@ -46,6 +46,9 @@
         text-align: center;
         padding: rem(50px) rem(50px);
     }
+    @include mobiles {
+        padding: rem(50px) rem(15px);
+    }
 }
 
 .reviews__title {

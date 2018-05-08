@@ -12,6 +12,10 @@
 .section__title_order {
     text-align: center;
     margin-bottom: rem(45px);
+    @include mobiles {
+        font-size: rem(55px);
+        margin-bottom: rem(30px);
+    }
 }
 
 .form {
@@ -176,7 +180,7 @@
     transform: scale(1);
 }
 
-.button__all_order {
+.button__all_orange {
     margin-right: rem(10px);
 }
 
