@@ -87,39 +87,36 @@
     height: 100%;
     display: flex;
     padding: rem(13px) 0 rem(40px) 0;
+    @include tablets {
+        
+    }
 }
 
 .burger__content {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-grow: 0.8;
+    margin-bottom: auto;
     align-items: center;
     justify-content: center;
     @include tablets {
         flex-direction: column;
-    }
-    @include phones {
-        flex-direction: row;
+        text-align: center;
+        margin-bottom: rem(50px);
     }
 }
 
 .burger__pic,
 .burger__desc {
-    flex-basis: 50%;
-    display: flex;
-    @include phones {
-        flex-basis: 100%;
-        text-align: center;
-    }
+    width: 50%;
 }
 
 .burger__pic {
-    @include tablets {
-        margin-bottom: rem(20px);
-    }
+    width: 100%;
 }
 
 .burger__desc {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -131,15 +128,12 @@
 }
 
 .burger__text {
-    display: flex;
     font-family: 'Lifehack', Arial, Helvetica, sans-serif;
     font-size: rem(65px);
     line-height: 0.9;
     margin-top: 20px;
     @include tablets {
-        width: 95%;
         margin-top: 0;
-        text-align: center;
     }
     @include phones {
         font-size: rem(58px);
@@ -153,6 +147,9 @@
     @include mobiles {
         white-space: nowrap;
         font-size: rem(55px);
+    }
+    @include phones {
+        white-space: nowrap;
     }
 }
 

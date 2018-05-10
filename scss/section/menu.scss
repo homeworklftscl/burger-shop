@@ -25,8 +25,11 @@
                 @include phones {
                     width: rem(270px);
                 }
+                @include special {
+                    width: rem(231px);
+                }
                 @include mobiles {
-                    width: rem(206px);
+                    width: rem(250px);
                 }
             }
         }
@@ -74,6 +77,11 @@
             min-width: rem(275px);
             padding: rem(60px) rem(20px);
         }
+
+        @include special {
+            min-width: rem(245px);
+        }
+
         @include mobiles {
             min-width: rem(220px);
             font-size: rem(12px);
