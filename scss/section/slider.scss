@@ -93,6 +93,7 @@
 }
 
 .slider__pic {
+    position: relative;
     @include tablets {
         position: relative;
         display: flex;
@@ -110,6 +111,10 @@
 .ingrediens {
     position: relative;
     display: flex;
+    &:hover .ingrediens__table {
+        opacity: 1;
+        z-index: 1;
+    }
     @include phones {
         margin-bottom: rem(20px);
     }
@@ -132,9 +137,6 @@
     transition: .5s;
     &:hover {
         background-color: $orange;
-    }
-    &:hover .ingrediens__table {
-        opacity: 1;
     }
     @include mobiles {
         width: rem(80px);
@@ -168,10 +170,12 @@
     height: rem(335px);
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: rem(5px);
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    display: flex;
+    z-index: -1;
     opacity: 0;
+    transition: .8s;
     @include tablets {
         width: rem(320px);
         right: 27.7%;

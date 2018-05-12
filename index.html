@@ -14,6 +14,36 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
+            <section class="full-screen">
+                <div class="full-screen__header">
+
+                    <div class="humburger-menu humburger-menu_close" id="close">
+                        <div class="humburger-menu__layer humburger-menu__layer_close1"></div>
+                        <div class="humburger-menu__layer humburger-menu__layer_close2"></div>
+                    </div>
+                </div>
+                <div class="full-screen__nav">
+                    <ul class="full-screen__list">
+                        <li class="full-screen__item"><a href="" class="full-screen__link">о нас</a></li>
+                        <li class="full-screen__item">
+                            <a href="" class="full-screen__link">бургеры</a>
+                        </li>
+                        <li class="full-screen__item">
+                            <a href="" class="full-screen__link">команда</a>
+                        </li>
+                        <li class="full-screen__item">
+                            <a href="" class="full-screen__link">меню</a>
+                        </li>
+                        <li class="full-screen__item">
+                            <a href="" class="full-screen__link">отзывы</a>
+                        </li>
+                        <li class="full-screen__item">
+                            <a href="" class="full-screen__link">контакты</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
             <section class="section burger">
                 <div class="conteiner burger__conteiner">
                     <header class="header">
@@ -46,6 +76,11 @@
                         </nav>
                         <div class="header__btn">
                             <button class="button button__all">заказать</button>
+                        </div>
+                        <div class="humburger-menu" id="open">
+                            <div class="humburger-menu__layer"></div>
+                            <div class="humburger-menu__layer"></div>
+                            <div class="humburger-menu__layer"></div>
                         </div>
                     </header>
                     <div class="burger__content">
@@ -237,7 +272,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="accordeon__item accordeon__item_active">
+                                <li class="accordeon__item">
                                     <a href="" class="teammate__name">сашка лукашенко</a>
                                     <div class="teammate__info">
                                         <div class="teammate__icon" style="background-image: url(img/content/alex.jpg)">
@@ -596,6 +631,7 @@
             </li>
         </ul>
     </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
