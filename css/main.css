@@ -616,7 +616,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .teammate__name:before {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -824,15 +825,21 @@ p {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 21%; }
   .ingrediens:hover .ingrediens__table {
     opacity: 1;
     z-index: 1; }
   @media screen and (max-width: 480px) {
     .ingrediens {
+      width: 23%;
       margin-bottom: 1.25rem; } }
+  @media screen and (max-width: 375px) {
+    .ingrediens {
+      width: 27%; } }
   @media screen and (max-width: 320px) {
     .ingrediens {
+      width: 29%;
       margin-bottom: 1.875rem; } }
 
 .ingrediens__block {
@@ -882,7 +889,7 @@ p {
 
 .ingrediens__table {
   position: absolute;
-  right: 16%;
+  right: -300%;
   width: 17.1875rem;
   height: 20.9375rem;
   background-color: rgba(255, 255, 255, 0.9);
@@ -897,26 +904,25 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: -1;
+  z-index: 1;
   opacity: 0;
-  -webkit-transition: .8s;
-  -o-transition: .8s;
-  transition: .8s; }
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s; }
   @media screen and (max-width: 768px) {
     .ingrediens__table {
       width: 20rem;
-      right: 27.7%; } }
+      right: -244%; } }
   @media screen and (max-width: 480px) {
     .ingrediens__table {
-      right: -3.8%;
-      z-index: 1; } }
+      right: -350%; } }
   @media screen and (max-width: 375px) {
     .ingrediens__table {
       width: 13.75rem;
-      right: 8.5%; } }
+      right: -240%; } }
   @media screen and (max-width: 320px) {
     .ingrediens__table {
-      right: -7.85%; } }
+      right: -271.9%; } }
 
 .table__list {
   padding: 0 1.875rem; }
