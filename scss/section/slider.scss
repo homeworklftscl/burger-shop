@@ -15,7 +15,7 @@
     }
 }
 
-.slider__content {
+.slider-burgers__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@
     }
 }
 
-.slider__info {
+.slider-burgers__info {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-size: rem(13px);
     font-weight: 300;
@@ -48,12 +48,12 @@
     }
 }
 
-.slider__price {
+.slider-burgers__price {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     @include tablets {
-        text-align: center;
+        justify-content: center;
     }
     @include tablets {
         display: flex;
@@ -80,8 +80,8 @@
     margin-right: rem(25px);
 }
 
-.slider__pic,
-.slider__desc {
+.slider-burgers__pic,
+.slider-burgers__desc {
     width: 50%;
     @include tablets {
         width: 80%;
@@ -92,7 +92,7 @@
     }
 }
 
-.slider__pic {
+.slider-burgers__pic {
     position: relative;
     @include tablets {
         position: relative;
@@ -104,7 +104,7 @@
     }
 }
 
-.slider__img {
+.slider-burgers__img {
     max-width: 100%;
 }
 

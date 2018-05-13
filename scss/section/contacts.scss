@@ -15,13 +15,16 @@
     bottom: 0;
     display: flex;
     justify-content: center;
-    @include phones {}
+    padding: rem(18px) 0;
 }
 
-.block {
+.block-conteiner {
     width: 100%;
     display: flex;
-    padding: rem(18px) 0;
+    flex-direction: row;
+    @include tablets{
+        padding: 0 rem(35px);
+    } 
     @include phones {
         flex-direction: column;
         justify-content: space-around;
@@ -29,7 +32,7 @@
     }
 }
 
-.block__contact {
+.contact {
     width: 50%;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-size: rem(14px);
@@ -72,7 +75,7 @@
     margin-right: rem(5px);
 }
 
-.block__social {
+.social {
     width: 50%;
     display: flex;
     flex-direction: column;
