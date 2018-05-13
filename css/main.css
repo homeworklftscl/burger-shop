@@ -904,11 +904,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
+  z-index: -1;
   opacity: 0;
-  -webkit-transition: .7s;
-  -o-transition: .7s;
-  transition: .7s; }
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
   @media screen and (max-width: 768px) {
     .ingrediens__table {
       width: 20rem;
@@ -965,7 +965,6 @@ p {
   font-weight: 300; }
 
 .kkal {
-  position: relative;
   width: 5.625rem;
   height: 5.625rem;
   display: -webkit-box;

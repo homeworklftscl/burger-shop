@@ -179,9 +179,9 @@
     flex-direction: column;
     justify-content: center;
     display: flex;
-    z-index: 1;
+    z-index: -1;
     opacity: 0;
-    transition: .7s;
+    transition: .5s;
     @include tablets {
         width: rem(320px);
         right: -244%;
@@ -240,7 +240,7 @@
 }
 
 .kkal {
-    position: relative;
+    //position: relative;
     width: rem(90px);
     height: rem(90px);
     display: flex;
