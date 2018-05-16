@@ -909,9 +909,9 @@ p {
   display: flex;
   z-index: -1;
   opacity: 0;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s; }
   @media screen and (max-width: 768px) {
     .ingrediens__table {
       width: 20rem;
@@ -1234,18 +1234,21 @@ p {
     .reviews__desc {
       display: none; } }
 
-.button__reviews {
+.button_reviews {
   background-color: #2f3234; }
-  .button__reviews:hover {
+  .button_reviews:hover {
     background-color: black; }
   @media screen and (max-width: 480px) {
-    .button__reviews {
+    .button_reviews {
       display: none; } }
 
-.button__reviews_adaptive {
-  display: none; }
+.button_adaptive {
+  display: none;
+  background-color: #2f3234; }
+  .button_adaptive:hover {
+    background-color: black; }
   @media screen and (max-width: 480px) {
-    .button__reviews_adaptive {
+    .button_adaptive {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
@@ -1444,10 +1447,10 @@ p {
   .form__radio_style:before {
     content: '';
     position: absolute;
-    top: 0.3125rem;
-    bottom: 0.3125rem;
-    right: 0.3125rem;
-    left: 0.3125rem;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
     background-color: #e25028;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
@@ -1490,10 +1493,10 @@ p {
   .form__checkbox_style:before {
     content: '';
     position: absolute;
-    top: 0.3125rem;
-    bottom: 0.3125rem;
-    right: 0.3125rem;
-    left: 0.3125rem;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
     background-color: #e25028;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);

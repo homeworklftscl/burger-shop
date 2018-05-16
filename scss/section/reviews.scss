@@ -71,7 +71,7 @@
     }
 }
 
-.button__reviews {
+.button_reviews {
     background-color: $dark;
     &:hover {
         background-color: black;
@@ -81,8 +81,12 @@
     }
 }
 
-.button__reviews_adaptive {
+.button_adaptive {
     display: none;
+    background-color: $dark;
+    &:hover {
+        background-color: black;
+    }
     @include phones {
         display: flex;
     }
