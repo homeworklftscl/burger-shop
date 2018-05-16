@@ -43,6 +43,10 @@
         padding: rem(25px) rem(50px);
     }
     @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         padding: rem(50px) rem(50px);
     }

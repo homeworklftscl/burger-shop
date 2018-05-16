@@ -1,10 +1,9 @@
-(function () {
     let menuList = document.querySelector('.menu__list');
 
     menuList.addEventListener('click', function (e) {
-        
+        e.preventDefault(); 
         if (e.target.classList.contains('menu__trigger')) {
-            e.preventDefault();    
+               
 
             let _this = e.target;
             let item = _this.parentNode;
@@ -13,8 +12,8 @@
             let content = _this.nextElementSibling;
     
             if (!item.classList.contains('menu__item_active')) {
-                for (let i = 0; i < item.length; i++) {
-                    item[i].classList.remove('menu__item_active');
+                for (let i = 0; i < items.length; i++) {
+                    items[i].classList.remove('menu__item_active');
                 }
 
                 item.classList.add('menu__item_active');
@@ -24,5 +23,3 @@
         }
         
     });
-    
-});

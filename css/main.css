@@ -449,16 +449,16 @@ p {
       width: 33.75rem; }
       @media screen and (max-width: 768px) {
         .menu__item_active .menu__content {
-          width: 31.9375rem; } }
+          width: 39.8125rem; } }
       @media screen and (max-width: 480px) {
         .menu__item_active .menu__content {
-          width: 16.875rem; } }
+          width: 18.1875rem; } }
       @media screen and (max-width: 375px) {
         .menu__item_active .menu__content {
-          width: 14.4375rem; } }
+          width: 14.625rem; } }
       @media screen and (max-width: 320px) {
         .menu__item_active .menu__content {
-          width: 15.625rem; } }
+          width: 15.75rem; } }
   .menu__trigger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -503,16 +503,19 @@ p {
     line-height: 1.5625rem;
     padding: 3.75rem 2.1875rem;
     min-width: 33.75rem; }
+    @media screen and (max-width: 768px) {
+      .menu__text {
+        min-width: 39.8125rem; } }
     @media screen and (max-width: 480px) {
       .menu__text {
-        min-width: 17.1875rem;
+        min-width: 18.1875rem;
         padding: 3.75rem 1.25rem; } }
     @media screen and (max-width: 375px) {
       .menu__text {
-        min-width: 15.3125rem; } }
+        min-width: 14.625rem; } }
     @media screen and (max-width: 320px) {
       .menu__text {
-        min-width: 13.75rem;
+        min-width: 15.75rem;
         font-size: 0.75rem;
         padding: 2.1875rem 1.25rem; } }
 
@@ -560,8 +563,24 @@ p {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%; } }
 
+.team__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50%; }
+
 .section__title_team {
-  margin-bottom: 2.875rem; }
+  margin-bottom: 3.125rem; }
   @media screen and (max-width: 768px) {
     .section__title_team {
       text-align: center; } }
@@ -573,12 +592,7 @@ p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s; }
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .teammate__info {
       -webkit-box-orient: vertical;
@@ -592,20 +606,19 @@ p {
       -ms-flex-align: center;
       align-items: center; } }
 
-.accordeon__item_active .teammate__info {
-  height: 6.875rem; }
-  @media screen and (max-width: 768px) {
-    .accordeon__item_active .teammate__info {
-      height: 11.875rem; } }
-
 .accordeon__item_active .teammate__name {
   color: #f8b43a; }
   .accordeon__item_active .teammate__name:before {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg); }
+
+.teammate__wrap {
+  height: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  overflow: hidden; }
 
 .teammate__name {
   font-family: "Gagalin", Arial, Helvetica, sans-serif;
@@ -622,14 +635,17 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
+    -ms-flex-item-align: center;
+    align-self: center;
     content: '';
     border-top: 0.3125rem solid #f8b43a;
     border-bottom: 0.3125rem solid transparent;
     border-left: 0.3125rem solid transparent;
     border-right: 0.3125rem solid transparent;
     margin-right: 0.625rem; }
+  @media screen and (max-width: 768px) {
+    .teammate__name {
+      font-size: 1.4375rem; } }
 
 .teammate__icon {
   width: 6.25rem;
@@ -1210,6 +1226,19 @@ p {
       padding: 1.5625rem 3.125rem; } }
   @media screen and (max-width: 480px) {
     .reviews__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       text-align: center;
       padding: 3.125rem 3.125rem; } }
   @media screen and (max-width: 320px) {

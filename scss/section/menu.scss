@@ -20,16 +20,16 @@
             .menu__content {
                 width: rem(540px);
                 @include tablets {
-                    width: rem(511px);
+                    width: rem(637px);
                 }
                 @include phones {
-                    width: rem(270px);
+                    width: rem(291px);
                 }
                 @include special {
-                    width: rem(231px);
+                    width: rem(234px);
                 }
                 @include mobiles {
-                    width: rem(250px);
+                    width: rem(252px);
                 }
             }
         }
@@ -73,17 +73,18 @@
         line-height: rem(25px);
         padding: rem(60px) rem(35px);
         min-width: rem(540px);
+        @include tablets {
+            min-width: rem(637px);
+        }
         @include phones {
-            min-width: rem(275px);
+            min-width: rem(291px);
             padding: rem(60px) rem(20px);
         }
-
         @include special {
-            min-width: rem(245px);
+            min-width: rem(234px);
         }
-
         @include mobiles {
-            min-width: rem(220px);
+            min-width: rem(252px);
             font-size: rem(12px);
             padding: rem(35px) rem(20px);
         }

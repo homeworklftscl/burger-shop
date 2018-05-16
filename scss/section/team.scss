@@ -18,8 +18,16 @@
     }
 }
 
+.team__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50%;
+}
+
 .section__title_team {
-    margin-bottom: rem(46px);
+    margin-bottom: rem(50px);
     @include tablets {
         text-align: center;
     }
@@ -29,9 +37,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: 2s;
     @include tablets {
         flex-direction: column;
         justify-content: center;
@@ -40,19 +45,18 @@
 }
 
 .accordeon__item_active {
-    .teammate__info {
-        height: rem(110px);
-        @include tablets {
-            height: rem(190px);
-        }
-    }
     .teammate__name {
         color: $yellow;
         &:before {
-            align-self: flex-start;
             transform: rotate(180deg);
         }
     }
+}
+
+.teammate__wrap {
+    height: 0;
+    transition: 1s;
+    overflow: hidden;
 }
 
 .teammate__name {
@@ -66,13 +70,16 @@
     cursor: pointer;
     &:before {
         display: flex;
-        align-self: flex-end;
+        align-self: center;
         content: '';
         border-top: rem(5px) solid $yellow;
         border-bottom: rem(5px) solid transparent;
         border-left: rem(5px) solid transparent;
         border-right: rem(5px) solid transparent;
         margin-right: rem(10px);
+    }
+    @include tablets {
+        font-size: rem(23px);
     }
 }
 
