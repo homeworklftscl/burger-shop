@@ -1070,11 +1070,13 @@ p {
   transform: rotate(90deg); }
 
 .contacts {
-  background-image: url(../img/bg/map-bg.png);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
   position: relative; }
+
+#map {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
 
 .footer {
   position: absolute;
