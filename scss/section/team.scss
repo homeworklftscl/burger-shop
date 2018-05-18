@@ -13,7 +13,9 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(22, 22, 22, 0.7);
+    padding: 0 0 0 rem(50px);
     @include tablets {
+        padding: 0;
         flex-basis: 100%;
     }
 }
@@ -23,13 +25,23 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 50%;
+    height: 65%;
+    @include phones {
+        height: 80%;
+    }
+    @include mobiles {
+        height: 90%;
+    }
 }
 
 .section__title_team {
     margin-bottom: rem(50px);
     @include tablets {
         text-align: center;
+    }
+    @include mobiles {
+        font-size: rem(55px);
+        margin-bottom: rem(30px);
     }
 }
 
@@ -81,6 +93,9 @@
     @include tablets {
         font-size: rem(23px);
     }
+    @include mobiles {
+        font-size: rem(16px);
+    }
 }
 
 .teammate__icon {
@@ -112,8 +127,9 @@
 
 .teammate__text {
     font-weight: 300;
-    width: 75%;
+    width: 50%;
     @include tablets {
+        width: 75%;
         text-align: center;
     }
 }

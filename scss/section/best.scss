@@ -19,6 +19,9 @@
         margin-bottom: rem(38px);
         font-size: 50px;
     }
+    @include mobiles {
+        margin-bottom: rem(30px);
+    }
 }
 
 .best__list {
@@ -48,6 +51,9 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+    @include mobiles {
+        margin-bottom: rem(25px);
     }
 }
 

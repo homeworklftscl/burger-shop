@@ -223,6 +223,9 @@ p {
   display: -ms-flexbox;
   display: flex;
   padding: 0.8125rem 0 2.5rem 0; }
+  @media screen and (max-width: 320px) {
+    .burger__conteiner {
+      padding-bottom: 0.6875rem; } }
 
 .burger__content {
   width: 100%;
@@ -254,6 +257,9 @@ p {
 
 .burger__pic {
   width: 100%; }
+  @media screen and (max-width: 320px) {
+    .burger__pic {
+      margin-bottom: 1.875rem; } }
 
 .burger__desc {
   display: -webkit-box;
@@ -325,6 +331,9 @@ p {
     .section__title_best {
       margin-bottom: 2.375rem;
       font-size: 50px; } }
+  @media screen and (max-width: 320px) {
+    .section__title_best {
+      margin-bottom: 1.875rem; } }
 
 .best__list {
   width: 100%;
@@ -365,6 +374,9 @@ p {
       margin-bottom: 3.125rem; }
       .best__item:last-child {
         margin-bottom: 0; } }
+  @media screen and (max-width: 320px) {
+    .best__item {
+      margin-bottom: 1.5625rem; } }
 
 .best__pic {
   text-align: center;
@@ -557,9 +569,11 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(22, 22, 22, 0.7); }
+  background-color: rgba(22, 22, 22, 0.7);
+  padding: 0 0 0 3.125rem; }
   @media screen and (max-width: 768px) {
     .team__wrapper {
+      padding: 0;
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%; } }
 
@@ -577,13 +591,23 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 50%; }
+  height: 65%; }
+  @media screen and (max-width: 480px) {
+    .team__content {
+      height: 80%; } }
+  @media screen and (max-width: 320px) {
+    .team__content {
+      height: 90%; } }
 
 .section__title_team {
   margin-bottom: 3.125rem; }
   @media screen and (max-width: 768px) {
     .section__title_team {
       text-align: center; } }
+  @media screen and (max-width: 320px) {
+    .section__title_team {
+      font-size: 3.4375rem;
+      margin-bottom: 1.875rem; } }
 
 .teammate__info {
   display: -webkit-box;
@@ -646,6 +670,9 @@ p {
   @media screen and (max-width: 768px) {
     .teammate__name {
       font-size: 1.4375rem; } }
+  @media screen and (max-width: 320px) {
+    .teammate__name {
+      font-size: 1rem; } }
 
 .teammate__icon {
   width: 6.25rem;
@@ -673,9 +700,10 @@ p {
 
 .teammate__text {
   font-weight: 300;
-  width: 75%; }
+  width: 50%; }
   @media screen and (max-width: 768px) {
     .teammate__text {
+      width: 75%;
       text-align: center; } }
 
 @media screen and (max-width: 768px) {
@@ -725,7 +753,14 @@ p {
     .slider__conteiner {
       width: 98%; } }
 
+.slider-burgers__list {
+  font-size: 0; }
+
 .slider-burgers__item {
+  display: inline-block;
+  overflow: hidden; }
+
+.slider-burgers__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,7 +771,7 @@ p {
   -ms-flex-align: center;
   align-items: center; }
   @media screen and (max-width: 768px) {
-    .slider-burgers__item {
+    .slider-burgers__wrap {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -751,7 +786,8 @@ p {
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .section__title_slider {
-      font-size: 3.4375rem; } }
+      font-size: 3.125rem;
+      margin-bottom: 0.9375rem; } }
 
 .slider-burgers__info {
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
@@ -763,6 +799,13 @@ p {
     .slider-burgers__info {
       text-align: center;
       font-size: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .slider-burgers__info {
+      line-height: 1.45;
+      margin-bottom: 0; } }
+  @media screen and (max-width: 320px) {
+    .slider-burgers__info {
+      font-size: 0.8125rem; } }
 
 .slider-burgers__price {
   display: -webkit-box;
@@ -802,6 +845,10 @@ p {
   font-size: 4.375rem;
   font-weight: 400;
   margin-right: 0.3125rem; }
+
+@media screen and (max-width: 320px) {
+  .price {
+    font-size: 3.125rem; } }
 
 .rub {
   margin-top: 14px;
@@ -845,21 +892,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 21%; }
+  width: 5.625rem; }
   .ingrediens:hover .ingrediens__table {
     opacity: 1;
     z-index: 1; }
-  @media screen and (max-width: 480px) {
-    .ingrediens {
-      width: 23%;
-      margin-bottom: 1.25rem; } }
-  @media screen and (max-width: 375px) {
-    .ingrediens {
-      width: 27%; } }
   @media screen and (max-width: 320px) {
     .ingrediens {
-      width: 29%;
-      margin-bottom: 1.875rem; } }
+      width: 5rem; } }
 
 .ingrediens__block {
   width: 5.625rem;
@@ -908,7 +947,8 @@ p {
 
 .ingrediens__table {
   position: absolute;
-  right: -300%;
+  top: 0;
+  left: 100%;
   width: 17.1875rem;
   height: 20.9375rem;
   background-color: rgba(255, 255, 255, 0.9);
@@ -930,18 +970,10 @@ p {
   transition: opacity .5s; }
   @media screen and (max-width: 768px) {
     .ingrediens__table {
-      width: 20rem;
-      right: -244%; } }
-  @media screen and (max-width: 480px) {
-    .ingrediens__table {
-      right: -350%; } }
+      width: 20rem; } }
   @media screen and (max-width: 375px) {
     .ingrediens__table {
-      width: 13.75rem;
-      right: -240%; } }
-  @media screen and (max-width: 320px) {
-    .ingrediens__table {
-      right: -271.9%; } }
+      width: 13.75rem; } }
 
 .table__list {
   padding: 0 1.875rem; }
@@ -1356,10 +1388,13 @@ p {
 .section__title_order {
   text-align: center;
   margin-bottom: 2.8125rem; }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     .section__title_order {
-      font-size: 3.4375rem;
-      margin-bottom: 1.875rem; } }
+      line-height: 1; } }
+  @media screen and (max-width: 375px) {
+    .section__title_order {
+      font-size: 3.125rem;
+      margin-bottom: 0.9375rem; } }
 
 .form {
   width: 100%;
@@ -1428,6 +1463,10 @@ p {
   .form__input:focus,
   .textarea:focus {
     border: 0.125rem solid #f8b43a; }
+  @media screen and (max-width: 375px) {
+    .form__input,
+    .textarea {
+      padding: 0.3125rem 0.625rem; } }
 
 .textarea {
   height: 8.125rem;
@@ -1562,7 +1601,13 @@ p {
   .textarea,
   .pay,
   .recall {
-    margin-bottom: 1.875rem; } }
+    margin-bottom: 1.25rem; } }
+
+@media screen and (max-width: 375px) {
+  .textarea,
+  .pay,
+  .recall {
+    margin-bottom: 0.625rem; } }
 
 .full-screen {
   display: none; }

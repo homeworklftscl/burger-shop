@@ -15,7 +15,16 @@
     }
 }
 
+.slider-burgers__list {
+    font-size: 0;
+}
+
 .slider-burgers__item {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.slider-burgers__wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +41,8 @@
         text-align: center;
     }
     @include phones {
-        font-size: rem(55px);
+        font-size: rem(50px);
+        margin-bottom: rem(15px);
     }
 }
 
@@ -45,6 +55,13 @@
     @include tablets {
         text-align: center;
         font-size: rem(15px);
+    }
+    @include phones {
+        line-height: 1.45;
+        margin-bottom: 0;
+    }
+    @include mobiles {
+        font-size: rem(13px);
     }
 }
 
@@ -72,6 +89,12 @@
     font-size: rem(70px);
     font-weight: 400;
     margin-right: rem(5px);
+}
+
+.price {
+    @include mobiles {
+        font-size: rem(50px);
+    }
 }
 
 .rub {
@@ -111,21 +134,15 @@
 .ingrediens {
     position: relative;
     display: flex;
-    width: 21%;
+    width: rem(90px);
     &:hover .ingrediens__table {
         opacity: 1;
         z-index: 1;
     }
-    @include phones {
-        width: 23%;
-        margin-bottom: rem(20px);
-    }
-    @include special {
-        width: 27%;
-    }
+
     @include mobiles {
-        width: 29%;
-        margin-bottom: rem(30px)
+        width: rem(80px);
+        
     }
 }
 
@@ -171,7 +188,8 @@
 
 .ingrediens__table {
     position: absolute;
-    right: -300%;
+    top: 0;
+    left: 100%;
     width: rem(275px);
     height: rem(335px);
     background-color: rgba(255, 255, 255, 0.9);
@@ -184,17 +202,9 @@
     transition: opacity .5s;
     @include tablets {
         width: rem(320px);
-        right: -244%;
-    }
-    @include phones {
-        right: -350%;
     }
     @include special {
         width: rem(220px);
-        right: -240%;
-    }
-    @include mobiles {
-        right: -271.9%;
     }
 }
 

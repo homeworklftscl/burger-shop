@@ -2,10 +2,14 @@
 
     menuList.addEventListener('click', function (e) {
         e.preventDefault(); 
-        if (e.target.classList.contains('menu__trigger')) {
+        if (e.target.classList.contains('menu__trigger') || 
+            e.target.classList.contains('menu__title')){
                
 
             let _this = e.target;
+            if (_this.tagName == 'DIV') {
+                _this = _this.parentNode;
+            }
             let item = _this.parentNode;
             let list = item.parentNode;
             let items = list.children;
