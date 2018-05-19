@@ -10,17 +10,17 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: pos1,
         map: map,
-        icon: '../img/icon/map-marker.svg'
+        icon: 'img/icon/map-marker.svg'
     });
     var marker = new google.maps.Marker({
         position: pos2,
         map: map,
-        icon: '../img/icon/map-marker.svg'
+        icon: 'img/icon/map-marker.svg'
     });
     var marker = new google.maps.Marker({
         position: pos3,
         map: map,
-        icon: '../img/icon/map-marker.svg'
+        icon: 'img/icon/map-marker.svg'
     });
 
     var infoWindow = new google.maps.InfoWindow ({
