@@ -73,11 +73,17 @@ p {
 
 .wrapper {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .maincontent {
   height: 100%;
-  min-height: 40.625rem; }
+  min-height: 40.625rem;
+  position: relative;
+  top: 0%;
+  -webkit-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s; }
 
 .conteiner {
   width: 95%;
@@ -99,6 +105,7 @@ p {
   flex-direction: column; }
 
 .section {
+  position: relative;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.31);
   min-height: 40.625rem;
@@ -753,12 +760,21 @@ p {
     .slider__conteiner {
       width: 98%; } }
 
+.slider-burgers {
+  width: 55rem;
+  overflow: hidden; }
+
 .slider-burgers__list {
-  font-size: 0; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 .slider-burgers__item {
-  display: inline-block;
-  overflow: hidden; }
+  display: inline-block; }
 
 .slider-burgers__wrap {
   display: -webkit-box;
@@ -971,9 +987,15 @@ p {
   @media screen and (max-width: 768px) {
     .ingrediens__table {
       width: 20rem; } }
+  @media screen and (max-width: 480px) {
+    .ingrediens__table {
+      width: 18.3125rem; } }
   @media screen and (max-width: 375px) {
     .ingrediens__table {
-      width: 13.75rem; } }
+      width: 15rem; } }
+  @media screen and (max-width: 320px) {
+    .ingrediens__table {
+      width: 12.4375rem; } }
 
 .table__list {
   padding: 0 1.875rem; }
@@ -1211,6 +1233,10 @@ p {
   transition: .5s; }
   .social__icon:hover {
     fill: #fff; }
+
+.reviews {
+  position: relative;
+  height: 100%; }
 
 .reviews__list {
   width: 100%;
@@ -1611,10 +1637,12 @@ p {
   .recall {
     margin-bottom: 0.625rem; } }
 
-.full-screen {
-  display: none; }
+.full-screen__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media screen and (max-width: 768px) {
-    .full-screen {
+    .full-screen__wrap {
       position: absolute;
       top: 0;
       right: 0;
@@ -1634,7 +1662,7 @@ p {
       -ms-flex-align: center;
       align-items: center; } }
   @media screen and (max-width: 768px) {
-    .full-screen_active {
+    .full-screen__wrap_active {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
@@ -1656,6 +1684,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -1735,6 +1765,89 @@ p {
 .humburger-menu__layer_close2 {
   position: absolute;
   top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.wrap-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(63, 66, 68, 0.92);
+  z-index: 10; }
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+
+.message {
+  position: relative;
+  width: 100%;
+  max-width: 31.25rem;
+  background-color: #fff;
+  padding: 1.875rem 1.25rem;
+  border-radius: 0.3125rem;
+  color: black; }
+  @media screen and (max-width: 768px) {
+    .message {
+      width: 70%; } }
+  @media screen and (max-width: 480px) {
+    .message {
+      width: 85%; } }
+
+.message__name {
+  font-family: Gagalin;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #2f3234;
+  text-transform: uppercase;
+  margin-bottom: 1.5625rem; }
+
+.message__review {
+  font-size: 0.875rem;
+  line-height: 1.42; }
+
+.message__close {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem; }
+
+.cross_message {
+  cursor: pointer; }
+
+.cross__span_color_orange {
+  background-color: #ec8468; }
+
+.cross {
+  position: relative;
+  width: 20px;
+  height: 20px; }
+
+.cross__span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 1.25rem;
+  height: 0.3125rem; }
+
+.cross__span_first {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.cross__span_second {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }

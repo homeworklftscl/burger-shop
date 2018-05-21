@@ -1,5 +1,5 @@
-.full-screen {
-    display: none;
+.full-screen__wrap {
+    display: flex;
     @include tablets {
         position: absolute;
         top: 0;
@@ -29,6 +29,7 @@
 
 .full-screen__nav {
     display: flex;
+    align-self: center;
     align-items: flex-end;
     flex-grow: 0.3;
 }

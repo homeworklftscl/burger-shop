@@ -1,7 +1,7 @@
 function initMap() {
     var uluru = { lat: 53.9000000, lng: 27.5666700 };
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12.42,
+        zoom: 12,
         center: uluru
     });
     var pos1 = { lat: 53.890865, lng: 27.523058 };
@@ -24,7 +24,7 @@ function initMap() {
     });
 
     var infoWindow = new google.maps.InfoWindow ({
-        content: '<h2 style="color:black;margin:0;">Mr.Burger</h2><br><p style="color:black">ул.Котлетная 15</p>',
+        content: '<h2 style="color:black;margin:0 0 -10px 0;">Mr.Burger</h2><br><p style="color:black">ул.Котлетная 15</p>',
         
     });
 

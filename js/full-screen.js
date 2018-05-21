@@ -1,11 +1,34 @@
 //FULL-SCREEN
-let open = document.querySelector('#open');
-let close = document.querySelector('#close');
-let active = document.querySelector('.full-screen');
+(function () {
+    let mainWrap = document.querySelector('.wrapper');
+    let ham = document.querySelector('#open');
+    let template = document.querySelector('#full-screen').innerHTML;
+    let overlay = createOverlay(template);
 
-open.addEventListener("click", function (e) {
-    active.classList.toggle('full-screen_active');
-});
-close.addEventListener("click", function (e) {
-    active.classList.toggle('full-screen_active');
-});
+    ham.addEventListener("click", function () {
+        overlay.open();
+        
+    });
+
+    function createOverlay(template) {
+        let fragment = document.createElement('div');
+
+        fragment.innerHTML = template;
+
+        let fullMenu = fragment.querySelector(".full-screen");
+        let closeMenu = fragment.querySelector("#close");
+
+        fragment = null;
+
+        closeMenu.addEventListener('click', function () {
+            mainWrap.removeChild(fullMenu);
+            
+        });
+
+        return {
+            open() {
+                mainWrap.insertBefore(fullMenu, mainWrap.firstChild);
+            }
+        }
+    }
+}());
