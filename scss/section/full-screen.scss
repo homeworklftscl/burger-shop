@@ -1,5 +1,11 @@
+.full-screen {
+    background-color: $dark;
+    height: 100%;
+}
+
 .full-screen__wrap {
     display: flex;
+    padding: rem(13px) 0 0 0;
     @include tablets {
         position: absolute;
         top: 0;
@@ -8,10 +14,15 @@
         bottom: 0;
         z-index: 1;
         min-height: 100%;
-        background-color: $dark;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+    }
+    @include special{
+        padding: rem(11px) 0 rem(40px) 0;
+    }
+    @include mobiles {
+        padding: rem(9px) 0 rem(40px) 0;
     }
     &_active {
         @include tablets {
@@ -42,7 +53,7 @@
     display: block;
     text-decoration: none;
     color: $white;
-    transition: .5s; 
+    transition: .5s;
 }
 
 .full-screen__item {
@@ -73,12 +84,6 @@
     display: none;
     @include tablets {
         display: block;
-        &_close {
-            margin: rem(55px) rem(40px) 0 0;
-            @include phones {
-                margin-right: rem(35px);
-            }
-        }
     }
 }
 

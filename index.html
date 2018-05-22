@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section burger section_active">
+            <section class="section burger active">
                 <div class="conteiner burger__conteiner">
                     <header class="header">
                         <div class="header__logo">
@@ -25,27 +25,27 @@
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">о нас</a>
+                                    <a href="" class="nav__link" data-scroll-to="1">о нас</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">бургеры</a>
+                                    <a href="" class="nav__link" data-scroll-to="2">бургеры</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">команда</a>
+                                    <a href="" class="nav__link" data-scroll-to="3">команда</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">меню</a>
+                                    <a href="" class="nav__link" data-scroll-to="4">меню</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">отзывы</a>
+                                    <a href="" class="nav__link" data-scroll-to="5">отзывы</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">контакты</a>
+                                    <a href="" class="nav__link" data-scroll-to="6">контакты</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <button class="button button__all">заказать</button>
+                            <button class="button button__all" data-scroll-to="6">заказать</button>
                         </div>
                         <div class="humburger-menu" id="open">
                             <div class="humburger-menu__layer"></div>
@@ -63,13 +63,13 @@
                         </div>
                     </div>
                     <div class="arrow">
-                        <a href="#s-best" class="arrow__link">
-                            <img src="./img/content/arrow-scroll.svg" alt="" class="arrow__img">
+                        <a href="" class="arrow__link"  data-scroll-to="1">
+                            <img src="./img/content/arrow-scroll.svg" alt="arrow-down" class="arrow__img" data-scroll-to="1">
                         </a>
                     </div>
                 </div>
             </section>
-            <section id="s-best" class="section best">
+            <section class="section best">
                 <div class="conteiner best__conteiner">
                     <div class="best__content">
                         <h2 class="section__title section__title_best">мы лучшие</h2>
@@ -212,7 +212,7 @@
                                         <div class="slider-burgers__price">
                                             <span class="price">500</span>
                                             <span class="rub">рублей</span>
-                                            <button class="button button__all">заказать</button>
+                                            <button class="button button__all" data-scroll-to="6">заказать</button>
                                         </div>
                                     </div>
                                 </div>
@@ -302,7 +302,7 @@
                                         <div class="slider-burgers__price">
                                             <span class="price">500</span>
                                             <span class="rub">рублей</span>
-                                            <button class="button button__all">заказать</button>
+                                            <button class="button button__all" data-scroll-to="6">заказать</button>
                                         </div>
                                     </div>
                                 </div>
@@ -392,7 +392,7 @@
                                         <div class="slider-burgers__price">
                                             <span class="price">500</span>
                                             <span class="rub">рублей</span>
-                                            <button class="button button__all">заказать</button>
+                                            <button class="button button__all" data-scroll-to="6">заказать</button>
                                         </div>
                                     </div>
                                 </div>
@@ -680,7 +680,7 @@
                                     <div class="form__title">Потребуется сдача</div>
                                 </label>
                                 <label class="form__card">
-                                    <input class="form__radio" type="radio" name="pay" value="">
+                                    <input class="form__radio" type="radio" name="pay" checked value="">
                                     <div class="form__radio_style"></div>
                                     <div class="form__title">Оплата по карте</div>
                                 </label>
@@ -751,51 +751,52 @@
     </div>
     <div class="nav-dottbar">
         <ul class="dottbar__list">
-            <li class="dottbar__item">
-                <div class="dottbar__link dottbar__link_active">
-                    <a href="" class="link link_active"></a>
+            <li class="dottbar__item dottbar__item_active">
+                <div class="dottbar__link">
+                    <a href="" class="link" data-scroll-to="0"></a>
                 </div>
             </li>
             <li class="dottbar__item">
                 <div class="dottbar__link">
-                    <a href="" class="link"></a>
+                    <a href="" class="link" data-scroll-to="1"></a>
                 </div>
             </li>
             <li class="dottbar__item">
                 <div class="dottbar__link">
-                    <a href="" class="link"></a>
+                    <a href="" class="link" data-scroll-to="2"></a>
                 </div>
             </li>
             <li class="dottbar__item">
                 <div class="dottbar__link">
-                    <a href="" class="link"></a>
+                    <a href="" class="link" data-scroll-to="3"></a>
                 </div>
             </li>
             <li class="dottbar__item">
                 <div class="dottbar__link">
-                    <a href="" class="link"></a>
+                    <a href="" class="link" data-scroll-to="4"></a>
                 </div>
             </li>
             <li class="dottbar__item">
                 <div class="dottbar__link">
-                    <a href="" class="link"></a>
+                    <a href="" class="link" data-scroll-to="5"></a>
                 </div>
             </li>
             <li class="dottbar__item">
                 <div class="dottbar__link">
-                    <a href="" class="link"></a>
+                    <a href="" class="link" data-scroll-to="6"></a>
                 </div>
             </li>
             <li class="dottbar__item">
                 <div class="dottbar__link">
-                    <a href="" class="link"></a>
+                    <a href="" class="link" data-scroll-to="7"></a>
                 </div>
             </li>
         </ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-    <script src="js/one-page-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="js/ops.js"></script>
     <script type="template" id="overlayTemplate">
         <div class="wrap-overlay">
         <div class="overlay">
@@ -814,36 +815,41 @@
     </div>
     </script>
     <script type="tamplate" id="full-screen">
-         <div class="full-screen" id="full-screen">
-                <div class="full-screen__wrap">
-                    <div class="full-screen__header">
+        <section class="full-screen" id="full-screen">
+            <div class="conteiner full-screen__wrap">
+                <div class="header">
+                    <div class="header__logo">
+                        <a href="" class="logo">
+                            <img src="./img/logo.svg" alt="logo" class="logo__img">
+                        </a>
+                    </div>
                     <div class="humburger-menu humburger-menu_close" id="close">
                         <div class="humburger-menu__layer humburger-menu__layer_close1"></div>
                         <div class="humburger-menu__layer humburger-menu__layer_close2"></div>
                     </div>
-                </div>
-                <div class="full-screen__nav">
-                    <ul class="full-screen__list">
-                        <li class="full-screen__item"><a href="" class="full-screen__link">о нас</a></li>
-                        <li class="full-screen__item">
-                            <a href="" class="full-screen__link">бургеры</a>
+                    </div>
+                    <div class="full-screen__nav">
+                        <ul class="full-screen__list">
+                            <li class="full-screen__item"><a href="" class="full-screen__link" data-scroll-to="1">о нас</a></li>
+                            <li class="full-screen__item">
+                                <a href="" class="full-screen__link" data-scroll-to="2">бургеры</a>
+                            </li>
+                            <li class="full-screen__item">
+                                <a href="" class="full-screen__link" data-scroll-to="3">команда</a>
+                            </li>
+                            <li class="full-screen__item">
+                                <a href="" class="full-screen__link" data-scroll-to="4">меню</a>
+                            </li>
+                            <li class="full-screen__item">
+                                <a href="" class="full-screen__link" data-scroll-to="5">отзывы</a>
                         </li>
                         <li class="full-screen__item">
-                            <a href="" class="full-screen__link">команда</a>
-                        </li>
-                        <li class="full-screen__item">
-                            <a href="" class="full-screen__link">меню</a>
-                        </li>
-                        <li class="full-screen__item">
-                            <a href="" class="full-screen__link">отзывы</a>
-                        </li>
-                        <li class="full-screen__item">
-                            <a href="" class="full-screen__link">контакты</a>
+                            <a href="" class="full-screen__link" data-scroll-to="7">контакты</a>
                         </li>
                     </ul>
                 </div>
-                </div>
             </div>
+        </section>
     </script>
     <script src="js/full-screen.js"></script>
     <script src="js/team.js"></script>

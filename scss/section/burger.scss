@@ -18,7 +18,6 @@
 }
 
 .header__logo {
-    z-index: 200;
     margin-right: auto;
 }
 
@@ -153,6 +152,7 @@
         font-size: rem(55px);
     }
     @include phones {
+        font-size: rem(55px);
         white-space: nowrap;
     }
 }

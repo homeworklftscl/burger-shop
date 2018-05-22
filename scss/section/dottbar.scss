@@ -33,12 +33,7 @@
     }
     &:hover .link {
         background-color: $orange;
-
     }
-}
-
-.dottbar__link_active {
-    border-color: white;
 }
 
 .link {
@@ -47,6 +42,11 @@
     transition: .5s;
 }
 
-.link_active {
-    background-color: $orange;
+.dottbar__item_active {
+    .dottbar__link {
+        border-color: white;
+    }
+    .link {
+        background-color: $orange;
+    }
 }

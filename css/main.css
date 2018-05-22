@@ -80,10 +80,9 @@ p {
   height: 100%;
   min-height: 40.625rem;
   position: relative;
-  top: 0%;
-  -webkit-transition: top 1s;
-  -o-transition: top 1s;
-  transition: top 1s; }
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 .conteiner {
   width: 95%;
@@ -163,7 +162,6 @@ p {
   display: flex; }
 
 .header__logo {
-  z-index: 200;
   margin-right: auto; }
 
 .button__all {
@@ -312,6 +310,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .section__title_burger {
+    font-size: 3.4375rem;
     white-space: nowrap; } }
 
 .arrow__link {
@@ -1386,9 +1385,6 @@ p {
   .dottbar__link:hover .link {
     background-color: #e25028; }
 
-.dottbar__link_active {
-  border-color: white; }
-
 .link {
   display: block;
   width: 6px;
@@ -1399,7 +1395,10 @@ p {
   -o-transition: .5s;
   transition: .5s; }
 
-.link_active {
+.dottbar__item_active .dottbar__link {
+  border-color: white; }
+
+.dottbar__item_active .link {
   background-color: #e25028; }
 
 .order {
@@ -1637,10 +1636,15 @@ p {
   .recall {
     margin-bottom: 0.625rem; } }
 
+.full-screen {
+  background-color: #2f3234;
+  height: 100%; }
+
 .full-screen__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 0.8125rem 0 0 0; }
   @media screen and (max-width: 768px) {
     .full-screen__wrap {
       position: absolute;
@@ -1650,7 +1654,6 @@ p {
       bottom: 0;
       z-index: 1;
       min-height: 100%;
-      background-color: #2f3234;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1661,6 +1664,12 @@ p {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
+  @media screen and (max-width: 375px) {
+    .full-screen__wrap {
+      padding: 0.6875rem 0 2.5rem 0; } }
+  @media screen and (max-width: 320px) {
+    .full-screen__wrap {
+      padding: 0.5625rem 0 2.5rem 0; } }
   @media screen and (max-width: 768px) {
     .full-screen__wrap_active {
       display: -webkit-box;
@@ -1740,12 +1749,7 @@ p {
   display: none; }
   @media screen and (max-width: 768px) {
     .humburger-menu {
-      display: block; }
-      .humburger-menu_close {
-        margin: 3.4375rem 2.5rem 0 0; } }
-    @media screen and (max-width: 768px) and (max-width: 480px) {
-      .humburger-menu_close {
-        margin-right: 2.1875rem; } }
+      display: block; } }
 
 .humburger-menu__layer {
   width: 2.8125rem;
