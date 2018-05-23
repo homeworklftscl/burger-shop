@@ -7,7 +7,7 @@
 
     ham.addEventListener("click", function () {
         overlay.open();
-        
+        initEvent();
     });
 
     function createOverlay(template) {

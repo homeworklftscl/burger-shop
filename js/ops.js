@@ -87,7 +87,11 @@ $(document).on('keydown', (e) => {
 })
 
 // клики по кнопкам навигации
-$('[data-scroll-to]').on('click', (e) => {
-    e.preventDefault();
-    performTransition(parseInt($(e.target).attr('data-scroll-to')));
+function initEvent() {
+    $('[data-scroll-to]').on('click', (e) => {
+        e.preventDefault();
+        console.log(e.target);
+        performTransition(parseInt($(e.target).attr('data-scroll-to')));
 });
+}
+initEvent();

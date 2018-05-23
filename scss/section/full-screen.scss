@@ -1,13 +1,16 @@
 .full-screen {
     background-color: $dark;
     height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 200;
 }
 
 .full-screen__wrap {
     display: flex;
+    position: absolute;
     padding: rem(13px) 0 0 0;
     @include tablets {
-        position: absolute;
         top: 0;
         right: 0;
         left: 0;
