@@ -212,3 +212,33 @@
         margin-bottom: rem(10px);
     }
 }
+
+.success,
+.error {
+    padding: rem(4px) rem(15px);
+    background: azure;
+    border-radius: rem(5px);
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-size: rem(30px);
+    position: absolute;
+    top: 80%;
+    right: 40%;
+    @include tablets {
+        position: static;
+        font-size: rem(25px);
+        margin-top: rem(15px);
+    }
+    @include mobiles {
+        padding: rem(2px) rem(15px);
+        font-size: rem(15px);
+        margin-top: rem(5px);
+    }
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

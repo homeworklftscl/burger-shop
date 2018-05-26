@@ -17,12 +17,19 @@
 
         let fullMenu = fragment.querySelector(".full-screen");
         let closeMenu = fragment.querySelector("#close");
+        let list = fragment.querySelector(".full-screen__list");
 
         fragment = null;
 
         closeMenu.addEventListener('click', function () {
             mainWrap.removeChild(fullMenu);
             
+        });
+
+        list.addEventListener('click', function (e) {
+            if (e.target.classList.contains('full-screen__link')) {
+                mainWrap.removeChild(fullMenu);
+            }
         });
 
         return {

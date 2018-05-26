@@ -90,7 +90,6 @@ $(document).on('keydown', (e) => {
 function initEvent() {
     $('[data-scroll-to]').on('click', (e) => {
         e.preventDefault();
-        console.log(e.target);
         performTransition(parseInt($(e.target).attr('data-scroll-to')));
 });
 }

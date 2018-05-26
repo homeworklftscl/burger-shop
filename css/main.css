@@ -470,7 +470,7 @@ p {
           width: 39.8125rem; } }
       @media screen and (max-width: 480px) {
         .menu__item_active .menu__content {
-          width: 18.1875rem; } }
+          width: 17.375rem; } }
       @media screen and (max-width: 375px) {
         .menu__item_active .menu__content {
           width: 14.625rem; } }
@@ -1636,8 +1636,37 @@ p {
   .recall {
     margin-bottom: 0.625rem; } }
 
+.success,
+.error {
+  padding: 0.25rem 0.9375rem;
+  background: azure;
+  border-radius: 0.3125rem;
+  font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+  font-size: 1.875rem;
+  position: absolute;
+  top: 80%;
+  right: 40%; }
+  @media screen and (max-width: 768px) {
+    .success,
+    .error {
+      position: static;
+      font-size: 1.5625rem;
+      margin-top: 0.9375rem; } }
+  @media screen and (max-width: 320px) {
+    .success,
+    .error {
+      padding: 0.125rem 0.9375rem;
+      font-size: 0.9375rem;
+      margin-top: 0.3125rem; } }
+
+.success {
+  color: green; }
+
+.error {
+  color: red; }
+
 .full-screen {
-  background-color: #2f3234;
+  background-color: rgba(47, 50, 52, 0.87);
   height: 100%;
   position: absolute;
   width: 100%;

@@ -18,7 +18,7 @@
                 <div class="conteiner burger__conteiner">
                     <header class="header">
                         <div class="header__logo">
-                            <a href="" class="logo">
+                            <a href="https://homeworklftscl.github.io/burger-shop/" class="logo">
                                 <img src="./img/logo.svg" alt="logo" class="logo__img">
                             </a>
                         </div>
@@ -40,7 +40,7 @@
                                     <a href="" class="nav__link" data-scroll-to="5">отзывы</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link" data-scroll-to="6">контакты</a>
+                                    <a href="" class="nav__link" data-scroll-to="7">контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -631,70 +631,70 @@
             <section class="section order">
                 <div class="conteiner order__conteiner">
                     <h2 class="section__title section__title_order">закажите доставку</h2>
-                    <form class="form">
+                    <form class="form" action="test.php" method="post" id="order-form">
                         <div class="form-left">
                             <div class="form__row">
                                 <label class="form__block">
-                                    <div class="form__title">Имя</div>
-                                    <input class="form__input" type="text" placeholder="Имя">
+                                    <div class="form__title">Имя*</div>
+                                    <input required class="form__input" type="text" placeholder="Имя" id="user-name" name="user-name">
                                 </label>
                                 <label class="form__block">
-                                    <div class="form__title">Телефон</div>
-                                    <input class="form__input" type="text" placeholder="+3754457926**">
-                                </label>
-                            </div>
-                            <div class="form__row">
-                                <label class="form__block">
-                                    <div class="form__title">Улица</div>
-                                    <input class="form__input" type="text">
+                                    <div class="form__title">Телефон*</div>
+                                    <input required class="form__input" type="tel" maxlength="19" minlength="15" placeholder="+375 (__) ___ __ __" id="user-number" name="user-number">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
-                                    <div class="form__title">Дом</div>
-                                    <input class="form__input" type="text">
+                                    <div class="form__title">Улица*</div>
+                                    <input required class="form__input" type="text" id="street" name="street">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Дом*</div>
+                                    <input required class="form__input" type="number" id="house" name="house">
                                 </label>
                                 <label class="form__block">
-                                    <div class="form__title">Корпус</div>
-                                    <input class="form__input" type="text">
+                                    <div class="form__title">Корпус*</div>
+                                    <input required class="form__input" type="number" id="housing" name="housing" >
                                 </label>
                                 <label class="form__block">
-                                    <div class="form__title">Квартира</div>
-                                    <input class="form__input" type="text">
+                                    <div class="form__title">Квартира*</div>
+                                    <input class="form__input" type="number" id="apartment" name="apartment">
                                 </label>
                                 <label class="form__block">
-                                    <div class="form__title">Этаж</div>
-                                    <input class="form__input" type="text">
+                                    <div class="form__title">Этаж*</div>
+                                    <input required class="form__input" type="number" id="floor" name="floor">
                                 </label>
                             </div>
                         </div>
                         <div class="form-right">
                             <label class="form__textarea">
                                 <div class="form__title">Коментарий</div>
-                                <textarea class="textarea" name="comment"></textarea>
+                                <textarea class="textarea" id="comment" name="comment"></textarea>
                             </label>
                             <div class="pay">
                                 <label class="form__change">
-                                    <input class="form__radio" type="radio" name="pay" value="">
+                                    <input class="form__radio" type="radio" id="pay-cash" name="pay" value="потребуется сдача">
                                     <span class="form__radio_style"></span>
                                     <div class="form__title">Потребуется сдача</div>
                                 </label>
                                 <label class="form__card">
-                                    <input class="form__radio" type="radio" name="pay" checked value="">
+                                    <input class="form__radio" type="radio" id="pay-card" name="pay" checked value="картой">
                                     <div class="form__radio_style"></div>
                                     <div class="form__title">Оплата по карте</div>
                                 </label>
                             </div>
                             <div class="recall">
                                 <label class="form__recall">
-                                    <input class="form__checkbox" type="checkbox">
+                                    <input class="form__checkbox" type="checkbox" id="dont-call" name="dont-call" value="1">
                                     <span class="form__checkbox_style"></span>
                                     <div class="form__title">Не перезванивать</div>
                                 </label>
                             </div>
                             <div class="order-btn">
-                                <button class="button button__all button__all_orange">заказать</button>
-                                <button class="button button__all button__all_clean">очистить</button>
+                                <button type="submit" class="button button__all button__all_orange">заказать</button>
+                                <button type="reset" id="clear-btn" class="button button__all button__all_clean">очистить</button>
                             </div>
                         </div>
                     </form>
@@ -815,7 +815,7 @@
     </div>
     </script>
     <script type="tamplate" id="full-screen">
-        <div class="full-screen" id="full-screen">
+        <div class="full-screen">
             <div class="conteiner full-screen__wrap">
                 <div class="header">
                     <div class="header__logo">
@@ -857,6 +857,7 @@
     <script src="js/maps.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/order.js"></script>  
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Bh6S7YsfoTGR1fVD5DZtRxe_U_CV_iM&callback=initMap">
     </script>

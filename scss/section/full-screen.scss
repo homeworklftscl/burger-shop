@@ -1,5 +1,5 @@
 .full-screen {
-    background-color: $dark;
+    background-color: rgba(47, 50, 52, .87);
     height: 100%;
     position: absolute;
     width: 100%;
@@ -21,7 +21,7 @@
         justify-content: flex-start;
         align-items: center;
     }
-    @include special{
+    @include special {
         padding: rem(11px) 0 rem(40px) 0;
     }
     @include mobiles {
